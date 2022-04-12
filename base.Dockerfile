@@ -1,5 +1,5 @@
 #Source https://roboticseabass.com/2021/04/21/docker-and-ros/
-FROM nvidia/cuda:11.1.1-cudnn8-devel-ubuntu18.04
+FROM nvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04
  
 # Minimal setup
 RUN apt-get update \
