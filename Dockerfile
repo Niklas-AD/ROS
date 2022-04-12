@@ -1,3 +1,4 @@
+#Source https://roboticseabass.com/2021/04/21/docker-and-ros/
 FROM nvidia/cudagl:11.1.1-base-ubuntu20.04
  
 # Minimal setup
