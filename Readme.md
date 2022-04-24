@@ -5,8 +5,8 @@
 4. docker build -f r50_node.Dockerfile -t r50_node .
 5. docker build -f detectron2_instance_seg.Dockerfile -t detecron2_node .
 ## Run Container
-5. docker run -it --network host --gpus all r50_node /bin/bash
-
+6. docker run -it --network host --gpus all r50_node /bin/bash
+7. docker run -it --network host --gpus all detecron2_node /bin/bash
 ## Run Rosnode
 rosrun mask2former {python_ros node}
 
