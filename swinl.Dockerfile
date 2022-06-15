@@ -19,7 +19,7 @@ RUN source /opt/ros/noetic/setup.bash \
  && catkin_make \
  && echo "source /home/appuser/mask2former_ws/devel/setup.bash" >> ~/.bashrc 
 
-#download R50 model
+#download trained swinl model
 #to-do unify origin repo (niklas-ad vs facebookresearch)
 RUN wget -O /home/appuser/mask2former_ws/model_config.yaml https://raw.githubusercontent.com/Niklas-AD/Mask2Former/main/configs/cityscapes/panoptic-segmentation/swin/maskformer2_swin_large_IN21k_384_bs16_90k.yaml
 RUN wget -O /home/appuser/mask2former_ws/model_weights.pth https://bwsyncandshare.kit.edu/s/qBHTarZeD7SJiKE/download/swinl_v2.pth
