@@ -22,7 +22,7 @@ RUN source /opt/ros/noetic/setup.bash \
 #download R50 model
 #to-do unify origin repo (niklas-ad vs facebookresearch)
 RUN wget -O /home/appuser/mask2former_ws/model_config.yaml https://raw.githubusercontent.com/facebookresearch/Mask2Former/main/configs/cityscapes/panoptic-segmentation/maskformer2_R50_bs16_90k.yaml
-RUN wget -O /home/appuser/mask2former_ws/model_weights.pkl https://dl.fbaipublicfiles.com/maskformer/mask2former/cityscapes/panoptic/maskformer2_R50_bs16_90k/model_final_4ab90c.pkl
+RUN wget -O /home/appuser/mask2former_ws/model_weights.pth https://bwsyncandshare.kit.edu/s/XJF5qCqTkZmCda8/download/R50.pth
 RUN wget https://raw.githubusercontent.com/Niklas-AD/Mask2Former/main/configs/cityscapes/panoptic-segmentation/Base-Cityscapes-PanopticSegmentation.yaml
 
 # Set the working folder at startup
